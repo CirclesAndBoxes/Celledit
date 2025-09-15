@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "right_click": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "components": {
+                "minecraft:custom_data": {
+                  "ce.small_cell.delete": true
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "right_click"
+    ]
+  ],
+  "rewards": {
+    "function": "celledit:fill/small_cell/delete_nearest"
+  },
+  "sends_telemetry_event": false
+}

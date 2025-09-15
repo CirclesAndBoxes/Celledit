@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "right_click": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "components": {
+                "minecraft:custom_data": {
+                  "ce.small_cell.yellow": true
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "right_click"
+    ]
+  ],
+  "rewards": {
+    "function": "celledit:tool/small_cell/toggle_yellow"
+  },
+  "sends_telemetry_event": false
+}
